@@ -17,3 +17,16 @@ Contains all the IMDB id, title, plot synopsis, tags for the movies. There are 1
  - Predict as many tags as possible with high precision and recall.
  - Incorrect tags could impact movie search results generated based on tags.
  - No strict latency constraints.
+
+## Tagset
+
+ - Contains 71 tags.
+ ![](tags.png)
+ 
+## Results:
+
+The best performance is shown by LogisticRegression with all w2v, bow and tfidf features together giving <b>0.4101</b> f1-micro.
+
+The performance of Top3 Tags LR model is <b>0.6102</b> f1-micro.
+
+The performance of Top4 Tags LR model is <b>0.5874</b> f1-micro.
